@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e79f4b2-59cb-4ef4-986d-ae2eb6d0e0e2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1URdSbYLMVDfThkLLQT8hVzcnzl" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575323210895" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e79f4b2-59cb-4ef4-986d-ae2eb6d0e0e2" name="Default Changelist" comment="" />
+      <created>1575322952575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575322952575</updated>
+      <workItem from="1575322954092" duration="264000" />
+      <workItem from="1575323354793" duration="46000" />
+      <workItem from="1575323424701" duration="12000" />
+      <workItem from="1575323461913" duration="105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="456" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575323497689">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="456" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.797@0.23.1440.797" timestamp="1575323497689" />
+    <state x="408" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575323386105">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="408" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.797@0.23.1440.797" timestamp="1575323386105" />
+    <state x="208" y="23" key="SettingsEditor" timestamp="1575323465961">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1575323465961" />
+    <state x="376" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1575323466375">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="376" y="256" key="com.intellij.ide.util.TipDialog/0.23.1440.797@0.23.1440.797" timestamp="1575323466375" />
+  </component>
+</project>
