@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e79f4b2-59cb-4ef4-986d-ae2eb6d0e0e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/day_one.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/day_one_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advent-of-code-2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/advent-of-code-2019.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/day-one.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/day-one-spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +118,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day_two_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="advent-of-code-2019" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/day_two_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="day_one_spec" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="advent-of-code-2019" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -172,6 +196,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Ruby.main" />
+        <item itemvalue="RSpec.day_two_spec" />
         <item itemvalue="RSpec.DayOne" />
         <item itemvalue="RSpec.day_one_spec" />
         <item itemvalue="Ruby.day_one_spec" />
@@ -205,7 +230,7 @@
       <workItem from="1575323590088" duration="835000" />
       <workItem from="1575324465163" duration="145000" />
       <workItem from="1575324627877" duration="34000" />
-      <workItem from="1575324679916" duration="2295000" />
+      <workItem from="1575324679916" duration="6871000" />
     </task>
     <servers />
   </component>
@@ -229,22 +254,22 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="408" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.797@0.23.1440.797" timestamp="1575323386105" />
-    <state width="699" height="196" key="GridCell.Tab.0.bottom" timestamp="1575327212912">
+    <state width="699" height="196" key="GridCell.Tab.0.bottom" timestamp="1575331926777">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1575327212912" />
-    <state width="699" height="196" key="GridCell.Tab.0.center" timestamp="1575327212911">
+    <state width="699" height="196" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1575331926777" />
+    <state width="699" height="196" key="GridCell.Tab.0.center" timestamp="1575331926777">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1575327212911" />
-    <state width="699" height="196" key="GridCell.Tab.0.left" timestamp="1575327212910">
+    <state width="699" height="196" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1575331926777" />
+    <state width="699" height="196" key="GridCell.Tab.0.left" timestamp="1575331926776">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1575327212910" />
-    <state width="699" height="196" key="GridCell.Tab.0.right" timestamp="1575327212911">
+    <state width="699" height="196" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1575331926776" />
+    <state width="699" height="196" key="GridCell.Tab.0.right" timestamp="1575331926777">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1575327212911" />
+    <state width="699" height="196" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1575331926777" />
     <state x="208" y="23" key="SettingsEditor" timestamp="1575323465961">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -265,6 +290,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/advent_of_code_2019@DayOne.rcov" NAME="DayOne Coverage Results" MODIFIED="1575327129070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@day_one_spec.rcov" NAME="day_one_spec Coverage Results" MODIFIED="1575325743338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@main.rcov" NAME="main Coverage Results" MODIFIED="1575327212859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="advent-of-code-2019" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@day_two_spec.rcov" NAME="day_two_spec Coverage Results" MODIFIED="1575329312553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@main.rcov" NAME="main Coverage Results" MODIFIED="1575331926736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="advent-of-code-2019" />
   </component>
 </project>
