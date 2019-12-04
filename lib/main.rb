@@ -22,13 +22,22 @@ require_relative "read"
 #puts "Total fuel double: #{total_fuel_array.sum}"
 #
 
-require_relative "day_two"
+#require_relative "day_two"
+#
+#puts "Day Two"
+#
+#input_day_two = Read.get_input(filename: "input/day-two-input.txt")
+#puts "Day two input:"
+#puts input_day_two
+##DayTwo.process(input: input_day_two.first.split(',').map(&:to_i))
+#
+#DayTwo.process_two(input: input_day_two.first.split(',').map(&:to_i))
+#
 
-puts "Day Two"
+require_relative "day_three/grid"
 
-input_day_two = Read.get_input(filename: "input/day-two-input.txt")
-puts "Day two input:"
-puts input_day_two
-#DayTwo.process(input: input_day_two.first.split(',').map(&:to_i))
+input_day_three = Read.get_input(filename: "input/day-three-input.txt")
 
-DayTwo.process_two(input: input_day_two.first.split(',').map(&:to_i))
+grid = DayThree::Grid.new(input_day_three)
+
+puts "Closest cross distance: #{grid.closest_cross_distance}"
