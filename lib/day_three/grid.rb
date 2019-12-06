@@ -17,27 +17,63 @@ module DayThree
       wire_2 = get_wire_path(data[1])
       #puts "wire 2 #{wire_2}"
 
-      wire_1.each do |point_1|
-        cross_points.push(point_1) if wire_2.include?(point_1)
-      end
+      @cross_points = wire_1 & wire_2
+
+      #wire_1.each do |point_1|
+      #  cross_points.push(point_1) if wire_2.include?(point_1)
+      #end
 
       #puts "Cross points: #{cross_points}"
+
     end
 
     def closest_cross_distance
-      cross_points.map(&:manhattan_distance_to_central_port).min
+      cross_points.map { |point| manhattan_distance_to_central_port(point) }.min
+    end
+
+    private def manhattan_distance_to_central_port(point)
+      x_and_y = point.split(',')
+      x = x_and_y[0].to_i
+      y = x_and_y[1].to_i
+      (x - 0).abs + (y - 0).abs
     end
 
     private def get_wire_path(wire)
       puts "wire #{wire}"
-      wire_points = [central_port]
+
       wire_instructions = wire.split(',')
       puts "Wire size #{wire_instructions.size}"
+
+      wire_points = []
+      x = 0
+      y = 0
       wire_instructions.each_with_index do |direction_and_distance, index|
-        mark_wire_path(direction_and_distance: direction_and_distance, wire_points: wire_points)
+        #mark_wire_path(direction_and_distance: direction_and_distance, wire_points: wire_points)
+
+        direction = direction_and_distance[0]
+        steps = direction_and_distance[1..-1].to_i
+
+        #puts "Direction: #{direction} Distance: #{steps}"
+        #puts "Start point: #{x},#{y}"
+
+        while steps > 0 do
+          case direction
+          when 'R'
+            x += 1
+          when 'L'
+            x -= 1
+          when 'U'
+            y += 1
+          when 'D'
+            y -= 1
+          end
+          point = "#{x},#{y}"
+          wire_points.push(point) unless wire_points.include?(point)
+          steps -= 1
+        end
+
         puts "Done #{index + 1} of #{wire_instructions.size}"
       end
-      wire_points.delete(central_port)
       wire_points
     end
 
@@ -72,7 +108,8 @@ module DayThree
 
     private def mark_point(x:, y:, wire_points:)
       #puts "Marking #{x} #{y}"
-      point = Point.new(x: x, y: y)
+      #point = Point.new(x: x, y: y)
+      point = "x:#{x},y:#{y}"
       #if grid_points.include?(point)
       #  cross_points.push(point) unless cross_points.include?(point) || point == central_port || wire_points.include?(point)
       #else
