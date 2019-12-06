@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e79f4b2-59cb-4ef4-986d-ae2eb6d0e0e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/day_three/grid.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/day_three/grid.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +245,7 @@
       <workItem from="1575324465163" duration="145000" />
       <workItem from="1575324627877" duration="34000" />
       <workItem from="1575324679916" duration="14844000" />
+      <workItem from="1575448536070" duration="1558000" />
     </task>
     <servers />
   </component>
@@ -269,22 +269,22 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="408" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.797@0.23.1440.797" timestamp="1575323386105" />
-    <state width="699" height="196" key="GridCell.Tab.0.bottom" timestamp="1575417867678">
+    <state width="699" height="196" key="GridCell.Tab.0.bottom" timestamp="1575621609766">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1575417867678" />
-    <state width="699" height="196" key="GridCell.Tab.0.center" timestamp="1575417867678">
+    <state width="699" height="196" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1575621609766" />
+    <state width="699" height="196" key="GridCell.Tab.0.center" timestamp="1575621609765">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1575417867678" />
-    <state width="699" height="196" key="GridCell.Tab.0.left" timestamp="1575417867677">
+    <state width="699" height="196" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1575621609765" />
+    <state width="699" height="196" key="GridCell.Tab.0.left" timestamp="1575621609764">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1575417867677" />
-    <state width="699" height="196" key="GridCell.Tab.0.right" timestamp="1575417867678">
+    <state width="699" height="196" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1575621609764" />
+    <state width="699" height="196" key="GridCell.Tab.0.right" timestamp="1575621609765">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="699" height="196" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1575417867678" />
+    <state width="699" height="196" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1575621609765" />
     <state x="208" y="23" key="SettingsEditor" timestamp="1575323465961">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -303,7 +303,7 @@
     <state x="114" y="25" key="new project wizard/0.23.1440.797@0.23.1440.797" timestamp="1575324562751" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@DayThree__Grid.rcov" NAME="DayThree::Grid Coverage Results" MODIFIED="1575417864177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@DayThree__Grid.rcov" NAME="DayThree::Grid Coverage Results" MODIFIED="1575448553809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@point_spec.rcov" NAME="point_spec Coverage Results" MODIFIED="1575413039262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@DayThree__Grid_with_wires_R___.rcov" NAME="DayThree::Grid with wires R... Coverage Results" MODIFIED="1575416258526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@DayOne.rcov" NAME="DayOne Coverage Results" MODIFIED="1575327129070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
@@ -311,6 +311,6 @@
     <SUITE FILE_PATH="coverage/advent_of_code_2019@day_one_spec.rcov" NAME="day_one_spec Coverage Results" MODIFIED="1575325743338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@day_two_spec.rcov" NAME="day_two_spec Coverage Results" MODIFIED="1575329312553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@with_wires_R8_U5_L5_D3_and____.rcov" NAME="with wires R8,U5,L5,D3 and ... Coverage Results" MODIFIED="1575413887585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent-of-code-2019" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@main.rcov" NAME="main Coverage Results" MODIFIED="1575417867623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="advent-of-code-2019" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@main.rcov" NAME="main Coverage Results" MODIFIED="1575448571444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="advent-of-code-2019" />
   </component>
 </project>

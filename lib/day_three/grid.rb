@@ -42,9 +42,9 @@ module DayThree
     end
 
     private def mark_wire_path(direction_and_distance:, wire_points:)
-      split_dir_and_dist = direction_and_distance.match(DIR_DISTANCE_REGEXP)
-      direction = split_dir_and_dist[1]
-      distance = split_dir_and_dist[2].to_i
+      #split_dir_and_dist = direction_and_distance.match(DIR_DISTANCE_REGEXP)
+      direction = direction_and_distance[0]
+      distance = direction_and_distance[1..-1].to_i
       start_point = wire_points.last
 
       #puts "Direction: #{direction} Distance: #{distance}"
