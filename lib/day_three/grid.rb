@@ -31,6 +31,10 @@ module DayThree
       cross_points.map { |point| manhattan_distance_to_central_port(point) }.min
     end
 
+    def minimal_signal_delay
+
+    end
+
     private def manhattan_distance_to_central_port(point)
       x_and_y = point.split(',')
       x = x_and_y[0].to_i
