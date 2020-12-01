@@ -1,4 +1,4 @@
-require_relative "read"
+require_relative "../read"
 #require_relative "day_one"
 #
 #puts "Day One"
