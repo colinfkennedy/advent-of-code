@@ -1,7 +1,8 @@
 require_relative "../read"
 # require_relative "day_one"
 # require_relative "day_two"
-require_relative "day_three"
+# require_relative "day_three"
+require_relative "day_four"
 
 # puts "Day One - 2020"
 #
@@ -19,10 +20,16 @@ require_relative "day_three"
 
 # puts "Correct passwords position: #{TwentyTwenty::DayTwo.number_correct_passwords_position(input_day_two)}"
 
-puts "Day Three - 2020"
+# puts "Day Three - 2020"
+#
+# input_day_three = Read.get_input(filename: "../input/2020/day-three.txt")
+#
+# # puts "Tree count: #{TwentyTwenty::DayThree.number_of_trees(input_day_three)}"
+#
+# puts "Product of slopes: #{TwentyTwenty::DayThree.product_of_slopes(input_day_three)}"
 
-input_day_three = Read.get_input(filename: "../input/2020/day-three.txt")
+puts "Day Four - 2020"
 
-# puts "Tree count: #{TwentyTwenty::DayThree.number_of_trees(input_day_three)}"
+input_day_four = Read.get_input(filename: "../input/2020/day-four.txt")
 
-puts "Product of slopes: #{TwentyTwenty::DayThree.product_of_slopes(input_day_three)}"
+puts "Valid passports: #{TwentyTwenty::DayFour.count_valid_passports(input_day_four)}"
