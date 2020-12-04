@@ -32,4 +32,4 @@ puts "Day Four - 2020"
 
 input_day_four = Read.get_input(filename: "../input/2020/day-four.txt")
 
-puts "Valid passports: #{TwentyTwenty::DayFour.count_valid_passports(input_day_four)}"
+TwentyTwenty::DayFour.count_valid_passports(input_day_four)

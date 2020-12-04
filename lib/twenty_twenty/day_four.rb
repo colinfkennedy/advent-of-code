@@ -4,6 +4,7 @@ module TwentyTwenty
   class DayFour
 
     def self.count_valid_passports(input)
+      valid_passports_criteria_count = 0
       passports_processed_count = 0
       valid_passports_count = 0
       passport = Passport.new
@@ -14,13 +15,14 @@ module TwentyTwenty
         else
           passports_processed_count += 1
           valid_passports_count += 1 if passport.is_valid?
+          valid_passports_criteria_count += 1 if passport.has_valid_criteria?
           passport = Passport.new
         end
       end
       passports_processed_count += 1
       valid_passports_count += 1 if passport.is_valid?
-      puts "Total passports processed: #{passports_processed_count}. Valid: #{valid_passports_count}"
-      valid_passports_count
+      valid_passports_criteria_count += 1 if passport.has_valid_criteria?
+      puts "Total passports processed: #{passports_processed_count}. Valid: #{valid_passports_count}. Valid criteria #{valid_passports_criteria_count}"
     end
 
   end
