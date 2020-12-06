@@ -49,3 +49,5 @@ puts "Day Six - 2020"
 input_day_six = Read.get_input(filename: "../input/2020/day-six.txt")
 
 puts "Affirmative Questions: #{TwentyTwenty::DaySix.count_affirmative_questions(input_day_six)}"
+
+puts "Affirmative Questions whole group: #{TwentyTwenty::DaySix.count_everyone_affirmative_questions(input_day_six)}"
