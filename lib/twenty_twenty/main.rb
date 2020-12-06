@@ -3,7 +3,8 @@ require_relative "../read"
 # require_relative "day_two"
 # require_relative "day_three"
 # require_relative "day_four"
-require_relative "day_five"
+# require_relative "day_five"
+require_relative "day_six"
 
 # puts "Day One - 2020"
 #
@@ -35,10 +36,16 @@ require_relative "day_five"
 #
 # TwentyTwenty::DayFour.count_valid_passports(input_day_four)
 
-puts "Day Five - 2020"
+# puts "Day Five - 2020"
+#
+# input_day_five = Read.get_input(filename: "../input/2020/day-five.txt")
+#
+# # puts "Highest seat id: #{TwentyTwenty::DayFive.highest_seat_id(input_day_five)}"
+#
+# puts "My seat id: #{TwentyTwenty::DayFive.my_seat_id(input_day_five)}"
 
-input_day_five = Read.get_input(filename: "../input/2020/day-five.txt")
+puts "Day Six - 2020"
 
-# puts "Highest seat id: #{TwentyTwenty::DayFive.highest_seat_id(input_day_five)}"
+input_day_six = Read.get_input(filename: "../input/2020/day-six.txt")
 
-puts "My seat id: #{TwentyTwenty::DayFive.my_seat_id(input_day_five)}"
+puts "Affirmative Questions: #{TwentyTwenty::DaySix.count_affirmative_questions(input_day_six)}"
