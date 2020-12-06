@@ -2,7 +2,8 @@ require_relative "../read"
 # require_relative "day_one"
 # require_relative "day_two"
 # require_relative "day_three"
-require_relative "day_four"
+# require_relative "day_four"
+require_relative "day_five"
 
 # puts "Day One - 2020"
 #
@@ -28,8 +29,16 @@ require_relative "day_four"
 #
 # puts "Product of slopes: #{TwentyTwenty::DayThree.product_of_slopes(input_day_three)}"
 
-puts "Day Four - 2020"
+# puts "Day Four - 2020"
+#
+# input_day_four = Read.get_input(filename: "../input/2020/day-four.txt")
+#
+# TwentyTwenty::DayFour.count_valid_passports(input_day_four)
 
-input_day_four = Read.get_input(filename: "../input/2020/day-four.txt")
+puts "Day Five - 2020"
 
-TwentyTwenty::DayFour.count_valid_passports(input_day_four)
+input_day_five = Read.get_input(filename: "../input/2020/day-five.txt")
+
+# puts "Highest seat id: #{TwentyTwenty::DayFive.highest_seat_id(input_day_five)}"
+
+puts "My seat id: #{TwentyTwenty::DayFive.my_seat_id(input_day_five)}"
