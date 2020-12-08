@@ -5,7 +5,8 @@ require_relative "../read"
 # require_relative "day_four"
 # require_relative "day_five"
 # require_relative "day_six"
-require_relative "day_seven"
+# require_relative "day_seven"
+require_relative "day_eight"
 
 # puts "Day One - 2020"
 #
@@ -51,10 +52,16 @@ require_relative "day_seven"
 #
 # puts "Affirmative Questions: #{TwentyTwenty::DaySix.count_affirmative_questions(input_day_six)}"
 
-puts "Day Seven - 2020"
+# puts "Day Seven - 2020"
+#
+# input_day_seven = Read.get_input(filename: "../input/2020/day-seven.txt")
+#
+# puts "Bag count: #{TwentyTwenty::DaySeven.count_container_bags(input_day_seven)}"
+#
+# puts "Bag count part 2: #{TwentyTwenty::DaySeven.number_bags_needed(input_day_seven)}"
 
-input_day_seven = Read.get_input(filename: "../input/2020/day-seven.txt")
+puts "Day Eight - 2020"
 
-puts "Bag count: #{TwentyTwenty::DaySeven.count_container_bags(input_day_seven)}"
+input_day_eight = Read.get_input(filename: "../input/2020/day-eight.txt")
 
-puts "Bag count part 2: #{TwentyTwenty::DaySeven.number_bags_needed(input_day_seven)}"
+puts "Acc before infinite loop: #{TwentyTwenty::DayEight.acc_before_infinite_loop(input_day_eight)}"
