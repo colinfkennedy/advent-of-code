@@ -55,4 +55,4 @@ puts "Day Seven - 2020"
 
 input_day_seven = Read.get_input(filename: "../input/2020/day-seven.txt")
 
-puts "Bag count: #{TwentyTwenty::DaySeven.count_bags(input_day_seven)}"
+puts "Bag count: #{TwentyTwenty::DaySeven.count_container_bags(input_day_seven)}"
