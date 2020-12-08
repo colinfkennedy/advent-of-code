@@ -4,7 +4,8 @@ require_relative "../read"
 # require_relative "day_three"
 # require_relative "day_four"
 # require_relative "day_five"
-require_relative "day_six"
+# require_relative "day_six"
+require_relative "day_seven"
 
 # puts "Day One - 2020"
 #
@@ -44,10 +45,14 @@ require_relative "day_six"
 #
 # puts "My seat id: #{TwentyTwenty::DayFive.my_seat_id(input_day_five)}"
 
-puts "Day Six - 2020"
+# puts "Day Six - 2020"
+#
+# input_day_six = Read.get_input(filename: "../input/2020/day-six.txt")
+#
+# puts "Affirmative Questions: #{TwentyTwenty::DaySix.count_affirmative_questions(input_day_six)}"
 
-input_day_six = Read.get_input(filename: "../input/2020/day-six.txt")
+puts "Day Seven - 2020"
 
-puts "Affirmative Questions: #{TwentyTwenty::DaySix.count_affirmative_questions(input_day_six)}"
+input_day_seven = Read.get_input(filename: "../input/2020/day-seven.txt")
 
-puts "Affirmative Questions whole group: #{TwentyTwenty::DaySix.count_everyone_affirmative_questions(input_day_six)}"
+puts "Bag count: #{TwentyTwenty::DaySeven.count_bags(input_day_seven)}"
