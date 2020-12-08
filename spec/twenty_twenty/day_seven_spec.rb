@@ -28,6 +28,18 @@ describe TwentyTwenty::DaySeven do
                "dotted black bags contain no other bags."]
       expect(described_class.number_bags_needed(input)).to eq(32)
     end
+
+    it "gets the answer 126 for number of bags for different input" do
+      input = ["shiny gold bags contain 2 dark red bags.",
+               "dark red bags contain 2 dark orange bags.",
+               "dark orange bags contain 2 dark yellow bags.",
+               "dark yellow bags contain 2 dark green bags.",
+               "dark green bags contain 2 dark blue bags.",
+               "dark blue bags contain 2 dark violet bags.",
+               "dark violet bags contain no other bags."]
+      expect(described_class.number_bags_needed(input)).to eq(126)
+    end
+
   end
 
 end

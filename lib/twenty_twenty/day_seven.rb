@@ -51,9 +51,15 @@ module TwentyTwenty
 
         inner_bags = inner_bags.split(",").map do |inner_bag|
           matched = inner_bag.strip.match(INNER_BAG_REGEX)
-          unless matched.nil?
-            number_contained_map[outer_bag] += matched[1].to_i
-            matched[2]
+          if matched.nil?
+            {
+              quantity: 0
+            }
+          else
+            {
+              bag_name: matched[2],
+              quantity: matched[1].to_i,
+            }
           end
         end
 
@@ -65,11 +71,9 @@ module TwentyTwenty
         container_bags[outer_bag] = inner_bags.compact
       end
 
-      gold_containers = find_containing_bags(MY_BAG, contains_map)
+      gold_bag_count = find_containing_bags_count(MY_BAG, contains_map)
 
-      bag_numbers = gold_containers.map { |bag| number_contained_map[bag] }
-
-      bag_numbers.inject(0){ |sum,x| sum + x }
+      gold_bag_count
     end
 
     def self.find_containing_bags(bag, contained_by_map)
@@ -83,6 +87,17 @@ module TwentyTwenty
       end
       all_containing_bags.push(containing_bags) unless containing_bags.first.nil?
       all_containing_bags.flatten.uniq
+    end
+
+    def self.find_containing_bags_count(bag, contains_map)
+      return 1 if bag.nil?
+      containing_bags_count = 0
+      containing_bags = contains_map[bag]
+
+      containing_bags.each do |containing_bag|
+        containing_bags_count += (find_containing_bags_count(containing_bag[:bag_name], contains_map) * containing_bag[:quantity]) + containing_bag[:quantity]
+      end
+      containing_bags_count
     end
   end
 end
