@@ -64,4 +64,6 @@ puts "Day Eight - 2020"
 
 input_day_eight = Read.get_input(filename: "../input/2020/day-eight.txt")
 
-puts "Acc before infinite loop: #{TwentyTwenty::DayEight.acc_before_infinite_loop(input_day_eight)}"
+# puts "Acc before infinite loop: #{TwentyTwenty::DayEight.acc_before_infinite_loop(input_day_eight)}"
+
+puts "Acc after fixing: #{TwentyTwenty::DayEight.acc_after_fixing(input_day_eight)}"
