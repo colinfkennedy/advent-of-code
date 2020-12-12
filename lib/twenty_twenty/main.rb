@@ -6,7 +6,8 @@ require_relative "../read"
 # require_relative "day_five"
 # require_relative "day_six"
 # require_relative "day_seven"
-require_relative "day_eight"
+# require_relative "day_eight"
+require_relative "day_nine"
 
 # puts "Day One - 2020"
 #
@@ -60,10 +61,18 @@ require_relative "day_eight"
 #
 # puts "Bag count part 2: #{TwentyTwenty::DaySeven.number_bags_needed(input_day_seven)}"
 
-puts "Day Eight - 2020"
+# puts "Day Eight - 2020"
+#
+# input_day_eight = Read.get_input(filename: "../input/2020/day-eight.txt")
+#
+# # puts "Acc before infinite loop: #{TwentyTwenty::DayEight.acc_before_infinite_loop(input_day_eight)}"
+#
+# puts "Acc after fixing: #{TwentyTwenty::DayEight.acc_after_fixing(input_day_eight)}"
 
-input_day_eight = Read.get_input(filename: "../input/2020/day-eight.txt")
+puts "Day Nine - 2020"
 
-# puts "Acc before infinite loop: #{TwentyTwenty::DayEight.acc_before_infinite_loop(input_day_eight)}"
+input_day_nine = Read.get_input(filename: "../input/2020/day-nine.txt")
+first_invalid_number = TwentyTwenty::DayNine.find_first_invalid(input_day_nine, 25)
+puts "First invalid number: #{first_invalid_number}"
 
-puts "Acc after fixing: #{TwentyTwenty::DayEight.acc_after_fixing(input_day_eight)}"
+puts "Weakness: #{TwentyTwenty::DayNine.find_weakness(input_day_nine, first_invalid_number)}"
