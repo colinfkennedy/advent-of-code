@@ -7,7 +7,8 @@ require_relative "../read"
 # require_relative "day_six"
 # require_relative "day_seven"
 # require_relative "day_eight"
-require_relative "day_nine"
+# require_relative "day_nine"
+require_relative "day_ten"
 
 # puts "Day One - 2020"
 #
@@ -69,10 +70,13 @@ require_relative "day_nine"
 #
 # puts "Acc after fixing: #{TwentyTwenty::DayEight.acc_after_fixing(input_day_eight)}"
 
-puts "Day Nine - 2020"
+puts "Day Ten - 2020"
 
-input_day_nine = Read.get_input(filename: "../input/2020/day-nine.txt")
-first_invalid_number = TwentyTwenty::DayNine.find_first_invalid(input_day_nine, 25)
-puts "First invalid number: #{first_invalid_number}"
+input_day_ten = Read.get_input(filename: "../input/2020/day-ten.txt")
+adapter_mapper = TwentyTwenty::DayTen.new(input_day_ten)
+one_volt_count = adapter_mapper.one_volt_count
+three_volt_count = adapter_mapper.three_volt_count
 
-puts "Weakness: #{TwentyTwenty::DayNine.find_weakness(input_day_nine, first_invalid_number)}"
+puts "One Volt Count: #{one_volt_count}"
+puts "Three Volt Count: #{three_volt_count}"
+puts "Mutiply: #{one_volt_count * three_volt_count}"
