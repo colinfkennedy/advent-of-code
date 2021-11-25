@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.7.2'
+ruby '3.0.3'
 
 gem 'rspec'
 gem 'facets'
+gem 'rubocop'
+gem 'solargraph'
