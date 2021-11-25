@@ -1,6 +1,5 @@
 module TwentyTwenty
   class DaySix
-
     def self.count_affirmative_questions(input)
       affirmative_answers = {}
       count_answers = 0
@@ -47,6 +46,5 @@ module TwentyTwenty
       end
       count
     end
-
   end
 end

@@ -8,8 +8,8 @@ module TwentyTwenty
     PID_REGEXP = /\d{9}/
 
     def parse_line(line)
-      line.split(" ").each do |field_value|
-        field, value = field_value.split(":")
+      line.split(' ').each do |field_value|
+        field, value = field_value.split(':')
         instance_variable_set("@#{field}", value)
       end
     end
@@ -17,19 +17,19 @@ module TwentyTwenty
     def is_valid?
       puts "byr: #{byr}, iyr: #{iyr}, eyr: #{eyr}, hgt: #{hgt}, ecl: #{ecl}, pid: #{pid}, cid: #{cid}"
       if byr.nil?
-        puts "Missing byr"
+        puts 'Missing byr'
       elsif iyr.nil?
-        puts "Missing iyr"
+        puts 'Missing iyr'
       elsif eyr.nil?
-        puts "Missing eyr"
+        puts 'Missing eyr'
       elsif hgt.nil?
-        puts "Missing hgt"
+        puts 'Missing hgt'
       elsif hcl.nil?
-        puts "Missing hcl"
+        puts 'Missing hcl'
       elsif ecl.nil?
-        puts "Missing ecl"
+        puts 'Missing ecl'
       elsif pid.nil?
-        puts "Missing pid"
+        puts 'Missing pid'
       elsif cid.nil?
         puts "Missing cid - that's ok"
       end
@@ -70,7 +70,7 @@ module TwentyTwenty
         false
       else
         height = matched[1].to_i
-        if matched[2] == "cm"
+        if matched[2] == 'cm'
           height >= 150 && height <= 193
         else
           height >= 59 && height <= 76

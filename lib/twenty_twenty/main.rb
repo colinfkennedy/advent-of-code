@@ -1,4 +1,4 @@
-require_relative "../read"
+require_relative '../read'
 # require_relative "day_one"
 # require_relative "day_two"
 # require_relative "day_three"
@@ -8,7 +8,7 @@ require_relative "../read"
 # require_relative "day_seven"
 # require_relative "day_eight"
 # require_relative "day_nine"
-require_relative "day_ten"
+require_relative 'day_ten'
 
 # puts "Day One - 2020"
 #
@@ -70,9 +70,9 @@ require_relative "day_ten"
 #
 # puts "Acc after fixing: #{TwentyTwenty::DayEight.acc_after_fixing(input_day_eight)}"
 
-puts "Day Ten - 2020"
+puts 'Day Ten - 2020'
 
-input_day_ten = Read.get_input(filename: "../input/2020/day-ten.txt")
+input_day_ten = Read.get_input(filename: '../input/2020/day-ten.txt')
 adapter_mapper = TwentyTwenty::DayTen.new(input_day_ten)
 one_volt_count = adapter_mapper.one_volt_count
 three_volt_count = adapter_mapper.three_volt_count

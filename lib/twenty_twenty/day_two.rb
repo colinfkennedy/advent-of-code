@@ -1,6 +1,5 @@
 module TwentyTwenty
   class DayTwo
-
     POLICY_PASSWORD_REGEXP = /([0-9]+)-([0-9]+) ([a-z]): ([a-z]+)/
 
     def self.number_correct_passwords_range(input)
@@ -21,9 +20,7 @@ module TwentyTwenty
         position_1, position_2, letter, password = match_policy_password(policy_password)
         position_1_valid = password[position_1 - 1] == letter
         position_2_valid = password[position_2 - 1] == letter
-        if position_1_valid ^ position_2_valid
-          correct_passwords.push(password)
-        end
+        correct_passwords.push(password) if position_1_valid ^ position_2_valid
       end
       correct_passwords.size
     end
@@ -36,7 +33,5 @@ module TwentyTwenty
       password = matched[4]
       [min, max, letter, password]
     end
-
   end
 end
-

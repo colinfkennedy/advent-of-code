@@ -1,11 +1,10 @@
 module TwentyTwenty
   class DayNine
-
     def self.find_first_invalid(input, preamble_length)
       preamble = []
       input = input.map(&:to_i)
       input.each do |number|
-        if (preamble.length == preamble_length)
+        if preamble.length == preamble_length
           if check_validity(number, preamble)
             preamble.push(number)
             preamble.shift
@@ -22,11 +21,11 @@ module TwentyTwenty
       input = input.map(&:to_i)
       input.each_with_index do |number, index|
         range_upper_index = is_target?(index, input, number, target)
-        unless range_upper_index.nil?
-          range = input[index..(index + range_upper_index)]
+        next if range_upper_index.nil?
 
-          return range.min + range.max
-        end
+        range = input[index..(index + range_upper_index)]
+
+        return range.min + range.max
       end
     end
 
@@ -46,6 +45,5 @@ module TwentyTwenty
         return nil if total > target
       end
     end
-
   end
 end

@@ -1,7 +1,7 @@
 module TwentyTwenty
   class DayTen
-
     attr_reader :one_volt_count, :three_volt_count
+
     def initialize(input)
       input = input.map(&:to_i)
       voltage_map = {}
@@ -34,9 +34,14 @@ module TwentyTwenty
         @adapters = adapters.clone
         return
       end
-      depth_first_search(reference_voltage + 1, target, voltage_map, adapters, total_adapters_count) if voltage_map[reference_voltage + 1]
-      depth_first_search(reference_voltage + 3, target, voltage_map, adapters, total_adapters_count) if voltage_map[reference_voltage + 3]
+      if voltage_map[reference_voltage + 1]
+        depth_first_search(reference_voltage + 1, target, voltage_map, adapters,
+                           total_adapters_count)
+      end
+      if voltage_map[reference_voltage + 3]
+        depth_first_search(reference_voltage + 3, target, voltage_map, adapters,
+                           total_adapters_count)
+      end
     end
-
   end
 end

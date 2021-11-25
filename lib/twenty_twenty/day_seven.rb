@@ -1,6 +1,6 @@
 module TwentyTwenty
   class DaySeven
-    MY_BAG = "shiny gold"
+    MY_BAG = 'shiny gold'
     INNER_BAG_REGEX = /(\d+) (\w+\s?\w*) bags?/
 
     def self.count_container_bags(input)
@@ -9,12 +9,12 @@ module TwentyTwenty
       contained_by_map = {}
       input.each do |line|
         line = line.strip
-        outer_bag, inner_bags = line.split("contain")
+        outer_bag, inner_bags = line.split('contain')
         outer_bag.slice!(/\sbags/)
         outer_bag = outer_bag.strip
         outer_bags.push(outer_bag)
 
-        inner_bags = inner_bags.split(",").map do |inner_bag|
+        inner_bags = inner_bags.split(',').map do |inner_bag|
           matched = inner_bag.strip.match(INNER_BAG_REGEX)
           matched[2] unless matched.nil?
         end
@@ -43,13 +43,13 @@ module TwentyTwenty
       number_contained_map = {}
       input.each do |line|
         line = line.strip
-        outer_bag, inner_bags = line.split("contain")
+        outer_bag, inner_bags = line.split('contain')
         outer_bag.slice!(/\sbags/)
         outer_bag = outer_bag.strip
 
         number_contained_map[outer_bag] = 0
 
-        inner_bags = inner_bags.split(",").map do |inner_bag|
+        inner_bags = inner_bags.split(',').map do |inner_bag|
           matched = inner_bag.strip.match(INNER_BAG_REGEX)
           if matched.nil?
             {
@@ -58,7 +58,7 @@ module TwentyTwenty
           else
             {
               bag_name: matched[2],
-              quantity: matched[1].to_i,
+              quantity: matched[1].to_i
             }
           end
         end
@@ -71,9 +71,7 @@ module TwentyTwenty
         container_bags[outer_bag] = inner_bags.compact
       end
 
-      gold_bag_count = find_containing_bags_count(MY_BAG, contains_map)
-
-      gold_bag_count
+      find_containing_bags_count(MY_BAG, contains_map)
     end
 
     def self.find_containing_bags(bag, contained_by_map)
@@ -83,6 +81,7 @@ module TwentyTwenty
 
       containing_bags.each do |containing_bag|
         next if containing_bag.nil?
+
         all_containing_bags.push(find_containing_bags(containing_bag, contained_by_map))
       end
       all_containing_bags.push(containing_bags) unless containing_bags.first.nil?
@@ -91,11 +90,13 @@ module TwentyTwenty
 
     def self.find_containing_bags_count(bag, contains_map)
       return 1 if bag.nil?
+
       containing_bags_count = 0
       containing_bags = contains_map[bag]
 
       containing_bags.each do |containing_bag|
-        containing_bags_count += (find_containing_bags_count(containing_bag[:bag_name], contains_map) * containing_bag[:quantity]) + containing_bag[:quantity]
+        containing_bags_count += (find_containing_bags_count(containing_bag[:bag_name],
+                                                             contains_map) * containing_bag[:quantity]) + containing_bag[:quantity]
       end
       containing_bags_count
     end
