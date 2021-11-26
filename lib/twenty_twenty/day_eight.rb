@@ -45,7 +45,7 @@ module TwentyTwenty
       index = 0
       acc = 0
 
-      while !indices_visited.include?(index) && !(index >= input.size)
+      while !indices_visited.include?(index) && index < input.size
         index, acc = process_instruction(acc, index, input[index], indices_visited)
       end
 

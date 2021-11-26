@@ -16,9 +16,10 @@ module TwentyTwenty
 
       previous_voltage = 0
       @adapters.each do |voltage|
-        if voltage - previous_voltage == 1
+        case voltage - previous_voltage
+        when 1
           @one_volt_count += 1
-        elsif voltage - previous_voltage == 3
+        when 3
           @three_volt_count += 1
         end
         previous_voltage = voltage

@@ -3,12 +3,13 @@ module TwentyNineteen
     Terminate = StandardError.new('Terminate')
 
     def self.calculate(opcode:, value_1: 0, value_2: 0)
-      if opcode == 1
+      case opcode
+      when 1
         # puts "Adding"
         value_1 + value_2
         # puts "Total = #{total}"
 
-      elsif opcode == 2
+      when 2
         # puts "Multiplying"
         value_1 * value_2
         # puts "Total = #{total}"

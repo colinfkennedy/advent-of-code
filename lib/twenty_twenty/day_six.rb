@@ -41,7 +41,7 @@ module TwentyTwenty
 
     def self.count_whole_group_answered(affirmative_answers, group_size)
       count = 0
-      affirmative_answers.values.each do |number_answered|
+      affirmative_answers.each_value do |number_answered|
         count += 1 if number_answered == group_size
       end
       count

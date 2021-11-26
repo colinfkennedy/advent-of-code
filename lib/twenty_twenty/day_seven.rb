@@ -1,6 +1,6 @@
 module TwentyTwenty
   class DaySeven
-    MY_BAG = 'shiny gold'
+    MY_BAG = 'shiny gold'.freeze
     INNER_BAG_REGEX = /(\d+) (\w+\s?\w*) bags?/
 
     def self.count_container_bags(input)
