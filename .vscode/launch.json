@@ -5,15 +5,31 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "RSpec - active spec file only",
+      "name": "Run RSpec - all",
       "type": "Ruby",
       "request": "launch",
-      "program": "/Users/colinkennedy/.rbenv/shims/rspec",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rspec",
       "args": [
-        "-I",
-        "${workspaceRoot}",
-        "${file}"
+        "--pattern",
+        "${workspaceRoot}/spec/**/*_spec.rb"
       ]
+    },
+    {
+      "name": "Debug RSpec - open spec file on a certain line",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "useBundler": true,
+      "pathToBundler": "/Users/colinkennedy/.rbenv/shims/bundler",
+      "showDebuggerOutput": false,
+      "debuggerPort": "1234",
+      "pathToRDebugIDE": "/Users/colinkennedy/.rbenv/shims/rdebug-ide",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": [
+        "${file}:${lineNumber}"
+      ],
+      "console": "integratedTerminal",
     }
   ]
 }

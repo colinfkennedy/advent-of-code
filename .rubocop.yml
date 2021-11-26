@@ -13,5 +13,5 @@ Metrics/AbcSize:
 Metrics/CyclomaticComplexity:
   Enabled: false
 
-Metrics/PerceievedComplexity:
+Metrics/PerceivedComplexity:
   Enabled: false
