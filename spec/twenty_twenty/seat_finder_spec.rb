@@ -38,7 +38,7 @@ describe TwentyTwenty::SeatFinder do
           %w[. A X X X]
         ]
 
-        adjacent_seats = described_class.new(seat_plan:  seat_plan).find_adjacent_seats(2, 0)
+        adjacent_seats = described_class.new(seat_plan: seat_plan).find_adjacent_seats(2, 0)
 
         expect(adjacent_seats).to match_array(%w[A A A])
       end
@@ -52,7 +52,7 @@ describe TwentyTwenty::SeatFinder do
           %w[X X X A .]
         ]
 
-        adjacent_seats = described_class.new(seat_plan:  seat_plan).find_adjacent_seats(2, 4)
+        adjacent_seats = described_class.new(seat_plan: seat_plan).find_adjacent_seats(2, 4)
 
         expect(adjacent_seats).to match_array(%w[A A A])
       end
@@ -125,6 +125,22 @@ describe TwentyTwenty::SeatFinder do
         adjacent_seats = described_class.new(seat_plan: seat_plan).find_adjacent_seats(1, 2)
 
         expect(adjacent_seats).to match_array(%w[A A A A A A A A])
+      end
+    end
+
+    context 'with new rules' do
+      context 'when fully surrounded seat' do
+        it 'returns the adjacent seats' do
+          seat_plan = [
+            %w[X A A A X],
+            %w[X A . A X],
+            %w[X A A A X]
+          ]
+
+          adjacent_seats = described_class.new(seat_plan: seat_plan).find_adjacent_seats(1, 2)
+
+          expect(adjacent_seats).to match_array(%w[A A A A A A A A])
+        end
       end
     end
   end
