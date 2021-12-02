@@ -13,9 +13,7 @@ module TwentyTwentyOne
       horizontal_position = 0
 
       input.each do |instruction|
-        matched_instruction = instruction.match(INSTRUCTION_REGEX)
-        direction = matched_instruction[1]
-        distance = matched_instruction[2].to_i
+        direction, distance = get_direction_and_distance(instruction)
 
         case direction
         when 'forward'
@@ -28,6 +26,36 @@ module TwentyTwentyOne
       end
 
       depth * horizontal_position
+    end
+
+    def product_of_depth_and_position_with_aim
+      depth = 0
+      horizontal_position = 0
+      aim = 0
+
+      input.each do |instruction|
+        direction, distance = get_direction_and_distance(instruction)
+
+        case direction
+        when 'forward'
+          horizontal_position += distance
+          depth += aim * distance
+        when 'down'
+          aim += distance
+        when 'up'
+          aim -= distance
+        end
+      end
+
+      depth * horizontal_position
+    end
+
+    private def get_direction_and_distance(instruction)
+      match = instruction.match(INSTRUCTION_REGEX)
+      direction = match[1]
+      distance = match[2].to_i
+
+      [direction, distance]
     end
   end
 end

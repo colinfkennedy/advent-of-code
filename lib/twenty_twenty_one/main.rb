@@ -16,3 +16,5 @@ puts 'Day Two - 2021'
 input_day_two = Read.get_input(filename: '../input/2021/day-two.txt')
 
 puts "Product depth and position: #{::TwentyTwentyOne::DayTwo.new(input_day_two).product_of_depth_and_position}"
+
+puts "Product depth and position with aim: #{::TwentyTwentyOne::DayTwo.new(input_day_two).product_of_depth_and_position_with_aim}"
