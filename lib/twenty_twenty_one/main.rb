@@ -26,3 +26,5 @@ puts 'Day Three - 2021'
 input_day_three = Read.get_input(filename: '../input/2021/day-three.txt')
 
 puts "Power consumption: #{::TwentyTwentyOne::DayThree.new(input_day_three).power_consumption}"
+
+puts "Life support rating: #{::TwentyTwentyOne::DayThree.new(input_day_three).life_support_rating}"
