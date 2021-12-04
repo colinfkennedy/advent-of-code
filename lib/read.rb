@@ -4,7 +4,7 @@ module Read
 
     File.open(filename, 'r') do |f|
       f.each_line do |line|
-        input.push(line)
+        input.push(line.strip)
       end
     end
     input

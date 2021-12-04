@@ -19,12 +19,20 @@ require_relative '../read'
 
 # puts "Product depth and position with aim: #{::TwentyTwentyOne::DayTwo.new(input_day_two).product_of_depth_and_position_with_aim}"
 
-require_relative 'day_three'
+# require_relative 'day_three'
 
-puts 'Day Three - 2021'
+# puts 'Day Three - 2021'
 
-input_day_three = Read.get_input(filename: '../input/2021/day-three.txt')
+# input_day_three = Read.get_input(filename: '../input/2021/day-three.txt')
 
-puts "Power consumption: #{::TwentyTwentyOne::DayThree.new(input_day_three).power_consumption}"
+# puts "Power consumption: #{::TwentyTwentyOne::DayThree.new(input_day_three).power_consumption}"
 
-puts "Life support rating: #{::TwentyTwentyOne::DayThree.new(input_day_three).life_support_rating}"
+# puts "Life support rating: #{::TwentyTwentyOne::DayThree.new(input_day_three).life_support_rating}"
+
+require_relative 'day_four'
+
+puts 'Day Four - 2021'
+
+input_day_four = Read.get_input(filename: 'lib/input/2021/day-four.txt')
+
+puts "Winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).winning_score}"
