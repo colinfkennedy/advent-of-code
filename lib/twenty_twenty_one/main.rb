@@ -36,3 +36,5 @@ puts 'Day Four - 2021'
 input_day_four = Read.get_input(filename: 'lib/input/2021/day-four.txt')
 
 puts "Winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).winning_score}"
+
+puts "Last winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).last_winning_score}"

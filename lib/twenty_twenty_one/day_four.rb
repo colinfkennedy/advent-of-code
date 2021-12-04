@@ -34,14 +34,15 @@ module TwentyTwentyOne
     end
 
     def last_winning_score
+      working_boards = boards.dup
       numbers_to_mark.each do |number|
-        boards.each do |board|
+        working_boards.each do |board|
           board.mark_number(number)
-          boards.delete(board) if board.winner? && boards.size > 1
         end
-        break if boards.any?(&:winner?) && boards.size == 1
+        working_boards = working_boards.reject(&:winner?) if working_boards.size > 1
+        break if working_boards.any?(&:winner?) && working_boards.size == 1
       end
-      boards.find(&:winner?).score
+      working_boards.find(&:winner?).score
     end
   end
 end
