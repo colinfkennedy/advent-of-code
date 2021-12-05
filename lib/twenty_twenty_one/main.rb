@@ -29,12 +29,23 @@ require_relative '../read'
 
 # puts "Life support rating: #{::TwentyTwentyOne::DayThree.new(input_day_three).life_support_rating}"
 
-require_relative 'day_four'
+# require_relative 'day_four'
 
-puts 'Day Four - 2021'
+# puts 'Day Four - 2021'
 
-input_day_four = Read.get_input(filename: 'lib/input/2021/day-four.txt')
+# input_day_four = Read.get_input(filename: 'lib/input/2021/day-four.txt')
 
-puts "Winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).winning_score}"
+# puts "Winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).winning_score}"
 
-puts "Last winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).last_winning_score}"
+# puts "Last winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).last_winning_score}"
+
+require_relative 'day_five'
+
+puts 'Day Five - 2021'
+
+input_day_five = Read.get_input(filename: 'lib/input/2021/day-five.txt')
+
+puts "Overlapping points count: #{::TwentyTwentyOne::DayFive.new(input_day_five).overlapping_points_count}"
+
+puts "Overlapping points with diagonals count: #{::TwentyTwentyOne::DayFive.new(input_day_five,
+                                                                 with_diagonals: true).overlapping_points_count}"
