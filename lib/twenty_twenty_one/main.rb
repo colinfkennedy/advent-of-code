@@ -39,13 +39,20 @@ require_relative '../read'
 
 # puts "Last winning board score: #{::TwentyTwentyOne::DayFour.new(input_day_four).last_winning_score}"
 
-require_relative 'day_five'
+# require_relative 'day_five'
 
-puts 'Day Five - 2021'
+# puts 'Day Five - 2021'
 
-input_day_five = Read.get_input(filename: 'lib/input/2021/day-five.txt')
+# input_day_five = Read.get_input(filename: 'lib/input/2021/day-five.txt')
 
-puts "Overlapping points count: #{::TwentyTwentyOne::DayFive.new(input_day_five).overlapping_points_count}"
+# puts "Overlapping points count: #{::TwentyTwentyOne::DayFive.new(input_day_five).overlapping_points_count}"
 
-puts "Overlapping points with diagonals count: #{::TwentyTwentyOne::DayFive.new(input_day_five,
-                                                                 with_diagonals: true).overlapping_points_count}"
+# puts "Overlapping points with diagonals count: #{::TwentyTwentyOne::DayFive.new(input_day_five, with_diagonals: true).overlapping_points_count}"
+
+require_relative 'day_six'
+
+puts 'Day Six - 2021'
+
+input_day_six = Read.get_input(filename: 'lib/input/2021/day-six.txt')
+
+puts "Fish count after 80 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 80)}"
