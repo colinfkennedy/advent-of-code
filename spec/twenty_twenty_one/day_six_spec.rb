@@ -15,5 +15,12 @@ describe TwentyTwentyOne::DaySix do
       ]
       expect(described_class.new(input).fish_count(day: 80)).to eq(5934)
     end
+
+    it 'gets the answer 26984457539 for fish count after 256 days' do
+      input = [
+        '3,4,3,1,2'
+      ]
+      expect(described_class.new(input).fish_count(day: 256)).to eq(26_984_457_539)
+    end
   end
 end

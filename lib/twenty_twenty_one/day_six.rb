@@ -7,20 +7,17 @@ module TwentyTwentyOne
     end
 
     def fish_count(day:)
+      fish_days_left_count = (0..8).map { |days_left| fishies.count(days_left) }
+
       (1..day).each do |_|
-        new_fish_count = 0
-        fishies.each_with_index do |fish, index|
-          if fish.zero?
-            fishies[index] = 6
-            new_fish_count += 1
-          else
-            fishies[index] = fish - 1
-          end
-        end
-        new_fish_count.times { fishies << 8 }
-        new_fish_count = 0
+        fish_who_spawned = fish_days_left_count[0]
+
+        fish_days_left_count.rotate!
+
+        fish_days_left_count[6] += fish_who_spawned
       end
-      fishies.size
+
+      fish_days_left_count.sum
     end
   end
 end

@@ -56,3 +56,5 @@ puts 'Day Six - 2021'
 input_day_six = Read.get_input(filename: 'lib/input/2021/day-six.txt')
 
 puts "Fish count after 80 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 80)}"
+
+puts "Fish count after 256 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 256)}"
