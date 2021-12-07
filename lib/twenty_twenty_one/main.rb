@@ -49,12 +49,22 @@ require_relative '../read'
 
 # puts "Overlapping points with diagonals count: #{::TwentyTwentyOne::DayFive.new(input_day_five, with_diagonals: true).overlapping_points_count}"
 
-require_relative 'day_six'
+# require_relative 'day_six'
 
-puts 'Day Six - 2021'
+# puts 'Day Six - 2021'
 
-input_day_six = Read.get_input(filename: 'lib/input/2021/day-six.txt')
+# input_day_six = Read.get_input(filename: 'lib/input/2021/day-six.txt')
 
-puts "Fish count after 80 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 80)}"
+# puts "Fish count after 80 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 80)}"
 
-puts "Fish count after 256 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 256)}"
+# puts "Fish count after 256 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 256)}"
+
+require_relative 'day_seven'
+
+puts 'Day Seven - 2021'
+
+input_day_seven = Read.get_input(filename: 'lib/input/2021/day-seven.txt')
+
+puts "Least fuel: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_least_fuel}"
+
+puts "Least fuel part 2: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_fuel_proper_engineering}"
