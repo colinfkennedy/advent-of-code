@@ -76,3 +76,5 @@ puts 'Day Eight - 2021'
 input_day_eight = Read.get_input(filename: 'lib/input/2021/day-eight.txt')
 
 puts "Unique segment digits in output: #{::TwentyTwentyOne::DayEight.new(input_day_eight).unique_segment_digits}"
+
+puts "Sum output values: #{::TwentyTwentyOne::DayEight.new(input_day_eight).sum_output_values}"
