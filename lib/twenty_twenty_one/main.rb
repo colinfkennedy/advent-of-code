@@ -59,12 +59,20 @@ require_relative '../read'
 
 # puts "Fish count after 256 days: #{::TwentyTwentyOne::DaySix.new(input_day_six).fish_count(day: 256)}"
 
-require_relative 'day_seven'
+# require_relative 'day_seven'
 
-puts 'Day Seven - 2021'
+# puts 'Day Seven - 2021'
 
-input_day_seven = Read.get_input(filename: 'lib/input/2021/day-seven.txt')
+# input_day_seven = Read.get_input(filename: 'lib/input/2021/day-seven.txt')
 
-puts "Least fuel: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_least_fuel}"
+# puts "Least fuel: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_least_fuel}"
 
-puts "Least fuel part 2: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_fuel_proper_engineering}"
+# puts "Least fuel part 2: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_fuel_proper_engineering}"
+
+require_relative 'day_eight'
+
+puts 'Day Eight - 2021'
+
+input_day_eight = Read.get_input(filename: 'lib/input/2021/day-eight.txt')
+
+puts "Unique segment digits in output: #{::TwentyTwentyOne::DayEight.new(input_day_eight).unique_segment_digits}"
