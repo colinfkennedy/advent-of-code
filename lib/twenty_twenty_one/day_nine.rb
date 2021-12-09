@@ -31,9 +31,10 @@ module TwentyTwentyOne
     private def find_basin_size(point, point_to_exclude = nil)
       return 0 if point.value == 9
 
+      point.visited = true
       size = 1
       point.neighbours.each do |neighbour|
-        next if neighbour == point_to_exclude
+        next if neighbour == point_to_exclude || neighbour.visited
 
         size += find_basin_size(neighbour, point)
       end

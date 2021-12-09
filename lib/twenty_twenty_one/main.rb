@@ -86,3 +86,5 @@ puts 'Day Nine - 2021'
 input_day_nine = Read.get_input(filename: 'lib/input/2021/day-nine.txt')
 
 puts "Risk level sum: #{::TwentyTwentyOne::DayNine.new(input_day_nine).risk_levels_sum}"
+
+puts "Largest basins product: #{::TwentyTwentyOne::DayNine.new(input_day_nine).largest_basins_product}"
