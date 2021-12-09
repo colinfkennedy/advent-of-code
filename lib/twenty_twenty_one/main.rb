@@ -69,12 +69,20 @@ require_relative '../read'
 
 # puts "Least fuel part 2: #{::TwentyTwentyOne::DaySeven.new(input_day_seven).align_fuel_proper_engineering}"
 
-require_relative 'day_eight'
+# require_relative 'day_eight'
 
-puts 'Day Eight - 2021'
+# puts 'Day Eight - 2021'
 
-input_day_eight = Read.get_input(filename: 'lib/input/2021/day-eight.txt')
+# input_day_eight = Read.get_input(filename: 'lib/input/2021/day-eight.txt')
 
-puts "Unique segment digits in output: #{::TwentyTwentyOne::DayEight.new(input_day_eight).unique_segment_digits}"
+# puts "Unique segment digits in output: #{::TwentyTwentyOne::DayEight.new(input_day_eight).unique_segment_digits}"
 
-puts "Sum output values: #{::TwentyTwentyOne::DayEight.new(input_day_eight).sum_output_values}"
+# puts "Sum output values: #{::TwentyTwentyOne::DayEight.new(input_day_eight).sum_output_values}"
+
+require_relative 'day_nine'
+
+puts 'Day Nine - 2021'
+
+input_day_nine = Read.get_input(filename: 'lib/input/2021/day-nine.txt')
+
+puts "Risk level sum: #{::TwentyTwentyOne::DayNine.new(input_day_nine).risk_levels_sum}"
