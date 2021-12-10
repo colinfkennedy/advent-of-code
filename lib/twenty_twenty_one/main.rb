@@ -79,12 +79,22 @@ require_relative '../read'
 
 # puts "Sum output values: #{::TwentyTwentyOne::DayEight.new(input_day_eight).sum_output_values}"
 
-require_relative 'day_nine'
+# require_relative 'day_nine'
 
-puts 'Day Nine - 2021'
+# puts 'Day Nine - 2021'
 
-input_day_nine = Read.get_input(filename: 'lib/input/2021/day-nine.txt')
+# input_day_nine = Read.get_input(filename: 'lib/input/2021/day-nine.txt')
 
-puts "Risk level sum: #{::TwentyTwentyOne::DayNine.new(input_day_nine).risk_levels_sum}"
+# puts "Risk level sum: #{::TwentyTwentyOne::DayNine.new(input_day_nine).risk_levels_sum}"
 
-puts "Largest basins product: #{::TwentyTwentyOne::DayNine.new(input_day_nine).largest_basins_product}"
+# puts "Largest basins product: #{::TwentyTwentyOne::DayNine.new(input_day_nine).largest_basins_product}"
+
+require_relative 'day_ten'
+
+puts 'Day Ten - 2021'
+
+input_day_ten = Read.get_input(filename: 'lib/input/2021/day-ten.txt')
+
+puts "Syntax error score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).syntax_error_score}"
+
+puts "Autocomplete score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).autocomplete_score}"
