@@ -89,12 +89,22 @@ require_relative '../read'
 
 # puts "Largest basins product: #{::TwentyTwentyOne::DayNine.new(input_day_nine).largest_basins_product}"
 
-require_relative 'day_ten'
+# require_relative 'day_ten'
 
-puts 'Day Ten - 2021'
+# puts 'Day Ten - 2021'
 
-input_day_ten = Read.get_input(filename: 'lib/input/2021/day-ten.txt')
+# input_day_ten = Read.get_input(filename: 'lib/input/2021/day-ten.txt')
 
-puts "Syntax error score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).syntax_error_score}"
+# puts "Syntax error score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).syntax_error_score}"
 
-puts "Autocomplete score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).autocomplete_score}"
+# puts "Autocomplete score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).autocomplete_score}"
+
+require_relative 'day_eleven'
+
+puts 'Day Eleven - 2021'
+
+input_day_eleven = Read.get_input(filename: 'lib/input/2021/day-eleven.txt')
+
+puts "Flash count: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).flash_count(100)}"
+
+puts "Synchrnised step: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).simultaneous_flash_step}"
