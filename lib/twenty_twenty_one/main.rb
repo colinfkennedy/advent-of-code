@@ -99,12 +99,22 @@ require_relative '../read'
 
 # puts "Autocomplete score: #{::TwentyTwentyOne::DayTen.new(input_day_ten).autocomplete_score}"
 
-require_relative 'day_eleven'
+# require_relative 'day_eleven'
 
-puts 'Day Eleven - 2021'
+# puts 'Day Eleven - 2021'
 
-input_day_eleven = Read.get_input(filename: 'lib/input/2021/day-eleven.txt')
+# input_day_eleven = Read.get_input(filename: 'lib/input/2021/day-eleven.txt')
 
-puts "Flash count: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).flash_count(100)}"
+# puts "Flash count: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).flash_count(100)}"
 
-puts "Synchrnised step: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).simultaneous_flash_step}"
+# puts "Synchrnised step: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).simultaneous_flash_step}"
+
+require_relative 'day_twelve'
+
+puts 'Day Twelve - 2021'
+
+input_day_twelve = Read.get_input(filename: 'lib/input/2021/day-twelve.txt')
+
+# puts "Paths count: #{::TwentyTwentyOne::DayTwelve.new(input_day_twelve).paths}"
+
+puts "Paths with double count: #{::TwentyTwentyOne::DayTwelve.new(input_day_twelve).paths(allow_double_visit: true)}"
