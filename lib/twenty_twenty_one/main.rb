@@ -109,12 +109,22 @@ require_relative '../read'
 
 # puts "Synchrnised step: #{::TwentyTwentyOne::DayEleven.new(input_day_eleven).simultaneous_flash_step}"
 
-require_relative 'day_twelve'
+# require_relative 'day_twelve'
 
-puts 'Day Twelve - 2021'
+# puts 'Day Twelve - 2021'
 
-input_day_twelve = Read.get_input(filename: 'lib/input/2021/day-twelve.txt')
+# input_day_twelve = Read.get_input(filename: 'lib/input/2021/day-twelve.txt')
 
 # puts "Paths count: #{::TwentyTwentyOne::DayTwelve.new(input_day_twelve).paths}"
 
-puts "Paths with double count: #{::TwentyTwentyOne::DayTwelve.new(input_day_twelve).paths(allow_double_visit: true)}"
+# puts "Paths with double count: #{::TwentyTwentyOne::DayTwelve.new(input_day_twelve).paths(allow_double_visit: true)}"
+
+require_relative 'day_thirteen'
+
+puts 'Day Thirteen - 2021'
+
+input_day_thirteen = Read.get_input(filename: 'lib/input/2021/day-thirteen.txt')
+
+puts "Visible dot count: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).visible_dots}"
+
+puts "Final grid drawn: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).draw_after_all_folds}"
