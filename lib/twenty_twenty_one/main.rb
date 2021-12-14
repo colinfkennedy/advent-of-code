@@ -119,12 +119,20 @@ require_relative '../read'
 
 # puts "Paths with double count: #{::TwentyTwentyOne::DayTwelve.new(input_day_twelve).paths(allow_double_visit: true)}"
 
-require_relative 'day_thirteen'
+# require_relative 'day_thirteen'
 
-puts 'Day Thirteen - 2021'
+# puts 'Day Thirteen - 2021'
 
-input_day_thirteen = Read.get_input(filename: 'lib/input/2021/day-thirteen.txt')
+# input_day_thirteen = Read.get_input(filename: 'lib/input/2021/day-thirteen.txt')
 
-puts "Visible dot count: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).visible_dots}"
+# puts "Visible dot count: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).visible_dots}"
 
-puts "Final grid drawn: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).draw_after_all_folds}"
+# puts "Final grid drawn: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).draw_after_all_folds}"
+
+require_relative 'day_fourteen'
+
+puts 'Day Fourteen - 2021'
+
+input_day_fourteen = Read.get_input(filename: 'lib/input/2021/day-fourteen.txt')
+
+puts "Polymer score after 10 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 10)}"
