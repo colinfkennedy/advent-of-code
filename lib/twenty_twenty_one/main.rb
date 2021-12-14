@@ -136,3 +136,5 @@ puts 'Day Fourteen - 2021'
 input_day_fourteen = Read.get_input(filename: 'lib/input/2021/day-fourteen.txt')
 
 puts "Polymer score after 10 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 10)}"
+
+puts "Polymer score after 40 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 40)}"
