@@ -129,12 +129,23 @@ require_relative '../read'
 
 # puts "Final grid drawn: #{::TwentyTwentyOne::DayThirteen.new(input_day_thirteen).draw_after_all_folds}"
 
-require_relative 'day_fourteen'
+# require_relative 'day_fourteen'
 
-puts 'Day Fourteen - 2021'
+# puts 'Day Fourteen - 2021'
 
-input_day_fourteen = Read.get_input(filename: 'lib/input/2021/day-fourteen.txt')
+# input_day_fourteen = Read.get_input(filename: 'lib/input/2021/day-fourteen.txt')
 
-puts "Polymer score after 10 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 10)}"
+# puts "Polymer score after 10 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 10)}"
 
-puts "Polymer score after 40 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 40)}"
+# puts "Polymer score after 40 steps min - max: #{::TwentyTwentyOne::DayFourteen.new(input_day_fourteen).polymer_score(steps: 40)}"
+
+require_relative 'day_fifteen'
+
+puts 'Day Fifteen - 2021'
+
+input_day_fifteen = Read.get_input(filename: 'lib/input/2021/day-fifteen.txt')
+
+puts "Lowest risk path cost: #{::TwentyTwentyOne::DayFifteen.new(input_day_fifteen).lowest_risk_path_cost}"
+
+puts "Large map lowest risk path cost: #{::TwentyTwentyOne::DayFifteen.new(input_day_fifteen,
+                                                                           large_path: true).lowest_risk_path_cost}"

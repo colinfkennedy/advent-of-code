@@ -22,6 +22,7 @@ GEM
     parallel (1.21.0)
     parser (3.0.3.0)
       ast (~> 2.4.1)
+    pqueue (2.1.0)
     racc (1.6.0)
     rainbow (3.0.0)
     rake (13.0.6)
@@ -81,6 +82,7 @@ PLATFORMS
 DEPENDENCIES
   debase
   facets
+  pqueue
   rspec
   rubocop
   ruby-debug-ide
